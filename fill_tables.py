@@ -3,12 +3,14 @@ from decimal import Decimal
 import psycopg2
 from psycopg2.extras import execute_values
 
+os.environ['PGCLIENTENCODING'] = 'utf-8'
+
 DB_CONFIG = {
     "host": 'localhost', # put your credentials here
-    "port": "5432", # put your credentials here
-    "dbname": "stores", # put your credentials here
+    "port": "5433", # put your credentials here
+    "dbname": "e_store", # put your credentials here
     "user": "postgres", # put your credentials here
-    "password": "1", # put your credentials here
+    "password": "39a57a1b", # put your credentials here
 }
 
 
